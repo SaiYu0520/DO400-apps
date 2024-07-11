@@ -21,13 +21,6 @@ pipeline{
             }
         }
         // Add the Release stage here
-        stage('Release') {
-            steps {
-                sh '''
-                oc project lpzmuy-greetings
-                oc start-build greeting-console --follow --wait
-                '''
-            }
-        }
+    
     }
 }
